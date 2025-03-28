@@ -19,7 +19,7 @@ body {
 .clock {
     width: 500px;
     aspect-ratio: 1;
-    background-image: url(./images/clock.png);
+    background-image: url(clock.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -60,7 +60,6 @@ body {
     width: 50%;
     height: 45%;
     position: absolute;
-    /* margin-bottom: 120px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,4 +91,29 @@ body {
     top: 20px;
     background-color: rgb(7, 10, 168);
     border-radius: 10px;
+}
+@media screen and (max-width: 520px) {
+    .clock{
+        width: 400px;
+        aspect-ratio: 1;
+    }
+}
+@media screen and (max-width: 400px) {
+    .clock{
+        width: 300px;
+        aspect-ratio: 1;
+    }
+    .hour::before{
+        content: "";
+        width: 4px;
+    }
+    .minute::before{
+        content: "";
+    width: 4px;
+    }
+    .second::before{
+        content: "";
+        width: 4px;
+
+    }
 }
